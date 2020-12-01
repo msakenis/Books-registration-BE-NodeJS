@@ -133,4 +133,18 @@ router.get('/books', middleware.isLoggedIn, (req, res) => {
     }
   );
 });
+router.get('/stats/users', middleware.isLoggedIn, (req, res) => {
+  con.query(
+    `SELECT  id, 
+    DATE_FORMAT(reg_date,'%M') as monthName,
+    COUNT(id) newUsers
+  FROM users
+  GROUP BY MONTH(reg_date) ASC`,
+    (err, result) => {
+      if (err) throw err;
+      res.json(result);
+    }
+  );
+});
+
 module.exports = router;
