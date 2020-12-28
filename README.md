@@ -2,7 +2,8 @@
   <h3 align="center">Books registration NodeJS Demo Back-End</h3>
 
   <p align="center">
-    Login, Reg + CRUD operations to SQL DB.
+  Demo for learning purposes only.
+  Login, Reg (JWT, bcrypt) + CRUD operations to SQL DB.
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -33,7 +34,7 @@ git clone https://github.com/msakenis/Books-registration-BE-NodeJS/
 ```sh
 npm install
 ```
-3. Create .env file as .env-example and enter database details.
+3. Create .env file as .env-example and enter database details. Do not forget to change main API URL in front-end
 
 4. Start the back-end in the local enviroment
 ```sh
@@ -48,4 +49,6 @@ It is Created to serve as Back-End service for Front-End in this repo https://gi
 
 Created by Mindaugas Sakenis, m.sakenis@gmail.com
 
-Project Link: [https://github.com/msakenis/books-reg-REACT-front-end](https://github.com/msakenis/books-reg-REACT-front-end)
+Project Links:<br />
+Front-End: [https://github.com/msakenis/books-reg-REACT-front-end](https://github.com/msakenis/books-reg-REACT-front-end) <br />
+Back-End: [https://github.com/msakenis/Books-registration-BE-NodeJS/](https://github.com/msakenis/Books-registration-BE-NodeJS/)
